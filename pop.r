@@ -121,4 +121,66 @@ ggplot() +
   scale_fill_distiller(palette = "RdBu", name="Variação populacional") +
   theme_minimal() 
 
+#  Adaptando o código do Lucas Warwar disponibilizado aqui:
+# https://gist.github.com/lucaswarwar/fcfec073e6331d102f032b2612dc0190
 
+pop <- pop %>% dplyr::mutate(
+  crescimento = POP22/POP21 - 1,
+  label = data.table::fcase(
+    crescimento < -.30, 'Redução de 30% ou mais',
+    crescimento >= -.30 & crescimento < -.15, 'Redução de 15% a 30%',
+    crescimento >= -.15 & crescimento < -.05, 'Redução de 5% a 15%',
+    crescimento >= -.05 & crescimento < 0, 'Redução de até 5%',
+    crescimento >= 0 & crescimento <= 0.05, 'Crescimento de até 5%',
+    crescimento > 0.05 & crescimento <= 0.15, 'Crescimento de 5% a 15%',
+    crescimento > 0.15 & crescimento <= 0.3, 'Crescimento de 15% a 30%',
+    crescimento > 0.3, 'Crescimento de 30% ou mais'))
+
+pop$label = factor(
+  pop$label, levels = c(
+    "Redução de 30% ou mais", 
+    "Redução de 15% a 30%", 
+    "Redução de 5% a 15%" ,
+    "Redução de até 5%" ,
+    "Crescimento de até 5%",
+    "Crescimento de 5% a 15%",
+    "Crescimento de 15% a 30%",
+    "Crescimento de 30% ou mais"), ordered = T)
+
+muni = geobr::read_municipality()
+uf = geobr::read_state()
+
+pop$code_muni = as.integer(pop$CODMUN7)
+
+muni = muni |>
+  dplyr::left_join(pop) |>
+  sf::st_as_sf()
+
+muni = na.omit(muni)
+
+ggplot() +
+  geom_sf(data = uf, fill = NA) +
+  geom_sf(data = muni, aes(fill=label),color=NA,alpha=.75) +
+  # annotate('text', x = -37.5, y = 2.5, size = 4.5,
+  #          label = 'Estados com\nmaior crescimento:\nRR (41%), MT (25%) e SC (24%)',
+  #          color = '#4d9221') +
+  # annotate('text', x = -37.5, y = -28.5, size = 4.5,
+  #          label = 'Estados com\nmenor crescimento:\nAL (0.1%), PE (2.8%) e MA (3.4%)',
+  #          color = '#c51b7d') +
+  scale_fill_brewer(palette = 'PiYG') +
+  labs(
+    title = 'Evolução das estimativas populacionais de 2021 e 2022',
+    # subtitle = 'Fonte: IBGE. Baseado nos resultados preliminares do Censo 2022 coletados até 25/12.',
+    # caption = 'Elaborado por @LucasWarwar'
+    ) +
+  theme_minimal() + 
+  theme(
+    axis.title = element_blank(),
+    plot.caption = element_text(vjust = 1),
+    legend.title = element_blank(),
+    legend.text = element_text(size = 10),
+    legend.position = c(.18,.25),
+    panel.grid = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text = element_blank()
+  )
