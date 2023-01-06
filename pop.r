@@ -9,9 +9,10 @@ library(geobr)
 ## Estimativas do TCU para 2022
 ## https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html?edicao=35938&t=resultados
 
+# Populaçào 2010 (CENSO)
+# https://sidra.ibge.gov.br/tabela/1378
 
-
-pop2022 <- read_xls(path = "POP2022_Municipios.xls", 
+pop2022 <- read_xls(path = "brute/POP2022_Municipios.xls", 
                     sheet = "Municípios",
                     range = "A2:E5572"
 )
@@ -61,7 +62,7 @@ pop.fun <- function(x, comma = T){
 
 
 
-pop2021 <- read_xls(path = "estimativa_dou_2021.xls", 
+pop2021 <- read_xls(path = "brute/estimativa_dou_2021.xls", 
                     sheet = "Municípios",
                     range = "A2:E5572"
 )
@@ -70,7 +71,7 @@ temp <- pop.fun(pop2021) %>% rename(POP21 = pop)
 pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
 
-pop2020 <- read_xls(path = "estimativa_dou_2020.xls", 
+pop2020 <- read_xls(path = "brute/estimativa_dou_2020.xls", 
                     sheet = "Municípios",
                     range = "A2:E5572", 
 )
@@ -78,7 +79,7 @@ pop2020 <- read_xls(path = "estimativa_dou_2020.xls",
 temp <- pop.fun(pop2020, comma = F) %>% rename(POP20 = pop)
 pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
-pop2019 <- read_xls(path = "estimativa_dou_2019.xls", 
+pop2019 <- read_xls(path = "brute/estimativa_dou_2019.xls", 
                     sheet = "Municípios",
                     range = "A2:E5572", 
 )
@@ -87,7 +88,7 @@ temp <- pop.fun(pop2019, comma = F) %>% rename(POP19 = pop)
 pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
 
-pop2018 <- read_xls(path = "estimativa_dou_2018.xls", 
+pop2018 <- read_xls(path = "brute/estimativa_dou_2018.xls", 
                     sheet = "Municípios",
                     range = "A2:E5572", 
 )
@@ -95,7 +96,7 @@ pop2018 <- read_xls(path = "estimativa_dou_2018.xls",
 temp <- pop.fun(pop2018, comma = T) %>% rename(POP18 = pop)
 pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
-pop2017 <- read_xls(path = "estimativa_dou_2017.xls", 
+pop2017 <- read_xls(path = "brute/estimativa_dou_2017.xls", 
                     sheet = "Municípios",
                     range = "A2:E5572", 
 )
@@ -103,7 +104,7 @@ pop2017 <- read_xls(path = "estimativa_dou_2017.xls",
 temp <- pop.fun(pop2017, comma = F) %>% rename(POP17 = pop)
 pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
-pop2016 <- read_xls(path = "estimativa_dou_2016.xls", 
+pop2016 <- read_xls(path = "brute/estimativa_dou_2016.xls", 
                     sheet = "Municípios",
                     range = "A2:E5572", 
 )
@@ -112,7 +113,7 @@ temp <- pop.fun(pop2016, comma = T) %>% rename(POP16 = pop)
 pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
 
-pop2015 <- read_xls(path = "estimativa_dou_2015.xls", 
+pop2015 <- read_xls(path = "brute/estimativa_dou_2015.xls", 
                     sheet = "Municípios",
                     range = "A3:E5573", 
 )
@@ -121,7 +122,7 @@ temp <- pop.fun(pop2015, comma = T) %>% rename(POP15 = pop)
 pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
 
-pop2014 <- read_xls(path = "estimativa_dou_2014.xls", 
+pop2014 <- read_xls(path = "brute/estimativa_dou_2014.xls", 
                     sheet = "Municípios",
                     range = "A3:E5573", 
 )
@@ -129,7 +130,7 @@ pop2014 <- read_xls(path = "estimativa_dou_2014.xls",
 temp <- pop.fun(pop2014) %>% rename(POP14 = pop)
 pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
-pop2013 <- read_xls(path = "estimativa_dou_2013.xls", 
+pop2013 <- read_xls(path = "brute/estimativa_dou_2013.xls", 
                     sheet = "Municípios",
                     range = "A3:E5573", 
 )
@@ -138,7 +139,7 @@ temp <- pop.fun(pop2013) %>% rename(POP13 = pop)
 pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
 
-pop2012 <- read_xls(path = "estimativa_dou_2012.xls", 
+pop2012 <- read_xls(path = "brute/estimativa_dou_2012.xls", 
                     sheet = "Municípios",
                     range = "A2:E5572", 
 )
@@ -147,7 +148,7 @@ temp <- pop.fun(pop2012) %>% rename(POP12 = pop)
 pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
 
-pop2011 <- read_xls(path = "estimativa_dou_2011.xls", 
+pop2011 <- read_xls(path = "brute/estimativa_dou_2011.xls", 
                     sheet = "MUNICÍPIOS",
                     range = "A3:E5573", 
 )
@@ -157,3 +158,17 @@ pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
 
 # write_csv(pop, file = "poptcu2011-2022.csv")
+
+# pop <- read_csv(file = "poptcu2011-2022.csv")
+
+temp <- read_xlsx("brute/tabela1378.xlsx", range = "A7:E5576", 
+                  col_names = c("CODMUN7", "Mun", "a", "b", "POP10")) %>% 
+  transmute(
+    CODMUN7 = as.numeric(CODMUN7),
+    POP10 = as.numeric(POP10)
+  )
+
+
+pop <- pop %>% left_join(y = temp, by = "CODMUN7")
+
+# write_csv(pop.test, file = "poptcu2010-2022.csv")
