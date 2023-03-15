@@ -1,6 +1,6 @@
 library(tidyverse)
 library(readxl)
-library(geobr)
+# library(geobr)
 
 # FONTES: 
 ## Estimativas do TCU para 2020 e 2021
