@@ -1,0 +1,509 @@
+NM_REGIAO,CD_MUN,NM_UF,cidade_gemea,fronteira
+Norte,1100015,Rondônia,0,1
+Norte,1100031,Rondônia,0,1
+Norte,1100056,Rondônia,0,1
+Norte,1100064,Rondônia,0,1
+Norte,1100072,Rondônia,0,1
+Norte,1100080,Rondônia,0,1
+Norte,1100106,Rondônia,1,1
+Norte,1100148,Rondônia,0,1
+Norte,1100296,Rondônia,0,1
+Norte,1100304,Rondônia,0,1
+Norte,1100320,Rondônia,0,1
+Norte,1100338,Rondônia,0,1
+Norte,1100379,Rondônia,0,1
+Norte,1100924,Rondônia,0,1
+Norte,1101450,Rondônia,0,1
+Norte,1101468,Rondônia,0,1
+Norte,1101492,Rondônia,0,1
+Norte,1101500,Rondônia,0,1
+Norte,1200013,Acre,0,1
+Norte,1200054,Acre,1,1
+Norte,1200104,Acre,1,1
+Norte,1200138,Acre,0,1
+Norte,1200179,Acre,0,1
+Norte,1200203,Acre,0,1
+Norte,1200252,Acre,1,1
+Norte,1200302,Acre,0,1
+Norte,1200328,Acre,0,1
+Norte,1200336,Acre,0,1
+Norte,1200351,Acre,0,1
+Norte,1200385,Acre,0,1
+Norte,1200393,Acre,0,1
+Norte,1200401,Acre,0,1
+Norte,1200427,Acre,0,1
+Norte,1200435,Acre,1,1
+Norte,1200450,Acre,0,1
+Norte,1200609,Acre,0,1
+Norte,1200708,Acre,0,1
+Norte,1200807,Acre,0,1
+Norte,1300201,Amazonas,0,1
+Norte,1300607,Amazonas,0,1
+Norte,1301654,Amazonas,0,1
+Norte,1303601,Amazonas,0,1
+Norte,1303809,Amazonas,0,1
+Norte,1303908,Amazonas,0,1
+Norte,1304062,Amazonas,1,1
+Norte,1400027,Roraima,0,1
+Norte,1400050,Roraima,0,1
+Norte,1400100,Roraima,0,1
+Norte,1400159,Roraima,1,1
+Norte,1400175,Roraima,0,1
+Norte,1400209,Roraima,0,1
+Norte,1400233,Roraima,0,1
+Norte,1400282,Roraima,0,1
+Norte,1400308,Roraima,0,1
+Norte,1400407,Roraima,0,1
+Norte,1400456,Roraima,1,1
+Norte,1400472,Roraima,0,1
+Norte,1400506,Roraima,0,1
+Norte,1400605,Roraima,0,1
+Norte,1400704,Roraima,0,1
+Norte,1600501,Amapá,1,1
+Sul,4100459,Paraná,0,1
+Sul,4100509,Paraná,0,1
+Sul,4100707,Paraná,0,1
+Sul,4101002,Paraná,0,1
+Sul,4101051,Paraná,0,1
+Sul,4102000,Paraná,0,1
+Sul,4102604,Paraná,1,1
+Sul,4102752,Paraná,0,1
+Sul,4103008,Paraná,0,1
+Sul,4103024,Paraná,0,1
+Sul,4103057,Paraná,0,1
+Sul,4103156,Paraná,0,1
+Sul,4103222,Paraná,0,1
+Sul,4103354,Paraná,0,1
+Sul,4103370,Paraná,0,1
+Sul,4103453,Paraná,0,1
+Sul,4103479,Paraná,0,1
+Sul,4103909,Paraná,0,1
+Sul,4104055,Paraná,0,1
+Sul,4104501,Paraná,0,1
+Sul,4104600,Paraná,0,1
+Sul,4104808,Paraná,0,1
+Sul,4105003,Paraná,0,1
+Sul,4105300,Paraná,0,1
+Sul,4105409,Paraná,0,1
+Sul,4105706,Paraná,0,1
+Sul,4106308,Paraná,0,1
+Sul,4106506,Paraná,0,1
+Sul,4106571,Paraná,0,1
+Sul,4106605,Paraná,0,1
+Sul,4107124,Paraná,0,1
+Sul,4107157,Paraná,0,1
+Sul,4107207,Paraná,0,1
+Sul,4107256,Paraná,0,1
+Sul,4107405,Paraná,0,1
+Sul,4107520,Paraná,0,1
+Sul,4107538,Paraná,0,1
+Sul,4107546,Paraná,0,1
+Sul,4107850,Paraná,0,1
+Sul,4108205,Paraná,0,1
+Sul,4108304,Paraná,1,1
+Sul,4108320,Paraná,0,1
+Sul,4108403,Paraná,0,1
+Sul,4108601,Paraná,0,1
+Sul,4108809,Paraná,1,1
+Sul,4109302,Paraná,0,1
+Sul,4109658,Paraná,0,1
+Sul,4109757,Paraná,0,1
+Sul,4109906,Paraná,0,1
+Sul,4110052,Paraná,0,1
+Sul,4110607,Paraná,0,1
+Sul,4110656,Paraná,0,1
+Sul,4110953,Paraná,0,1
+Sul,4111209,Paraná,0,1
+Sul,4111555,Paraná,0,1
+Sul,4112751,Paraná,0,1
+Sul,4112959,Paraná,0,1
+Sul,4113304,Paraná,0,1
+Sul,4113452,Paraná,0,1
+Sul,4114351,Paraná,0,1
+Sul,4114609,Paraná,0,1
+Sul,4114708,Paraná,0,1
+Sul,4115101,Paraná,0,1
+Sul,4115309,Paraná,0,1
+Sul,4115358,Paraná,0,1
+Sul,4115408,Paraná,0,1
+Sul,4115606,Paraná,0,1
+Sul,4115804,Paraná,0,1
+Sul,4115853,Paraná,0,1
+Sul,4116059,Paraná,0,1
+Sul,4116109,Paraná,0,1
+Sul,4116703,Paraná,0,1
+Sul,4116950,Paraná,0,1
+Sul,4117057,Paraná,0,1
+Sul,4117206,Paraná,0,1
+Sul,4117222,Paraná,0,1
+Sul,4117255,Paraná,0,1
+Sul,4117453,Paraná,0,1
+Sul,4117909,Paraná,0,1
+Sul,4118451,Paraná,0,1
+Sul,4118501,Paraná,0,1
+Sul,4118857,Paraná,0,1
+Sul,4118907,Paraná,0,1
+Sul,4119004,Paraná,0,1
+Sul,4119251,Paraná,0,1
+Sul,4119806,Paraná,0,1
+Sul,4120150,Paraná,0,1
+Sul,4120358,Paraná,0,1
+Sul,4120655,Paraná,0,1
+Sul,4120853,Paraná,0,1
+Sul,4120903,Paraná,0,1
+Sul,4121000,Paraná,0,1
+Sul,4121257,Paraná,0,1
+Sul,4121356,Paraná,0,1
+Sul,4121406,Paraná,0,1
+Sul,4121604,Paraná,0,1
+Sul,4122156,Paraná,0,1
+Sul,4122800,Paraná,0,1
+Sul,4123006,Paraná,0,1
+Sul,4123501,Paraná,0,1
+Sul,4123808,Paraná,0,1
+Sul,4123824,Paraná,0,1
+Sul,4124020,Paraná,0,1
+Sul,4124053,Paraná,0,1
+Sul,4124400,Paraná,1,1
+Sul,4124806,Paraná,0,1
+Sul,4125209,Paraná,0,1
+Sul,4125357,Paraná,0,1
+Sul,4125456,Paraná,0,1
+Sul,4125704,Paraná,0,1
+Sul,4125753,Paraná,0,1
+Sul,4126272,Paraná,0,1
+Sul,4126355,Paraná,0,1
+Sul,4126652,Paraná,0,1
+Sul,4126801,Paraná,0,1
+Sul,4126900,Paraná,0,1
+Sul,4127403,Paraná,0,1
+Sul,4127700,Paraná,0,1
+Sul,4127858,Paraná,0,1
+Sul,4127908,Paraná,0,1
+Sul,4127957,Paraná,0,1
+Sul,4128005,Paraná,0,1
+Sul,4128104,Paraná,0,1
+Sul,4128559,Paraná,0,1
+Sul,4128609,Paraná,0,1
+Sul,4128625,Paraná,0,1
+Sul,4128708,Paraná,0,1
+Sul,4128807,Paraná,0,1
+Sul,4200101,Santa Catarina,0,1
+Sul,4200507,Santa Catarina,0,1
+Sul,4200556,Santa Catarina,0,1
+Sul,4200804,Santa Catarina,0,1
+Sul,4201653,Santa Catarina,0,1
+Sul,4202081,Santa Catarina,0,1
+Sul,4202099,Santa Catarina,0,1
+Sul,4202156,Santa Catarina,0,1
+Sul,4202537,Santa Catarina,0,1
+Sul,4202578,Santa Catarina,0,1
+Sul,4203105,Santa Catarina,0,1
+Sul,4203501,Santa Catarina,0,1
+Sul,4204103,Santa Catarina,0,1
+Sul,4204202,Santa Catarina,0,1
+Sul,4204350,Santa Catarina,0,1
+Sul,4204400,Santa Catarina,0,1
+Sul,4204459,Santa Catarina,0,1
+Sul,4204707,Santa Catarina,0,1
+Sul,4204756,Santa Catarina,0,1
+Sul,4204905,Santa Catarina,0,1
+Sul,4205001,Santa Catarina,1,1
+Sul,4205175,Santa Catarina,0,1
+Sul,4205308,Santa Catarina,0,1
+Sul,4205357,Santa Catarina,0,1
+Sul,4205431,Santa Catarina,0,1
+Sul,4205605,Santa Catarina,0,1
+Sul,4206405,Santa Catarina,0,1
+Sul,4206603,Santa Catarina,0,1
+Sul,4206652,Santa Catarina,0,1
+Sul,4207650,Santa Catarina,0,1
+Sul,4207684,Santa Catarina,0,1
+Sul,4207759,Santa Catarina,0,1
+Sul,4207858,Santa Catarina,0,1
+Sul,4208005,Santa Catarina,0,1
+Sul,4208401,Santa Catarina,0,1
+Sul,4208955,Santa Catarina,0,1
+Sul,4209177,Santa Catarina,0,1
+Sul,4209458,Santa Catarina,0,1
+Sul,4210506,Santa Catarina,0,1
+Sul,4210555,Santa Catarina,0,1
+Sul,4210902,Santa Catarina,0,1
+Sul,4211009,Santa Catarina,0,1
+Sul,4211405,Santa Catarina,0,1
+Sul,4211454,Santa Catarina,0,1
+Sul,4211652,Santa Catarina,0,1
+Sul,4211850,Santa Catarina,0,1
+Sul,4211876,Santa Catarina,0,1
+Sul,4212007,Santa Catarina,0,1
+Sul,4212106,Santa Catarina,0,1
+Sul,4212239,Santa Catarina,0,1
+Sul,4212908,Santa Catarina,0,1
+Sul,4213153,Santa Catarina,0,1
+Sul,4214151,Santa Catarina,0,1
+Sul,4214201,Santa Catarina,0,1
+Sul,4215075,Santa Catarina,0,1
+Sul,4215208,Santa Catarina,0,1
+Sul,4215356,Santa Catarina,0,1
+Sul,4215554,Santa Catarina,0,1
+Sul,4215687,Santa Catarina,0,1
+Sul,4215695,Santa Catarina,0,1
+Sul,4215752,Santa Catarina,0,1
+Sul,4216008,Santa Catarina,0,1
+Sul,4216107,Santa Catarina,0,1
+Sul,4216255,Santa Catarina,0,1
+Sul,4216701,Santa Catarina,0,1
+Sul,4216909,Santa Catarina,0,1
+Sul,4217154,Santa Catarina,0,1
+Sul,4217204,Santa Catarina,0,1
+Sul,4217303,Santa Catarina,0,1
+Sul,4217501,Santa Catarina,0,1
+Sul,4217550,Santa Catarina,0,1
+Sul,4217758,Santa Catarina,0,1
+Sul,4217956,Santa Catarina,0,1
+Sul,4218756,Santa Catarina,0,1
+Sul,4218855,Santa Catarina,0,1
+Sul,4219101,Santa Catarina,0,1
+Sul,4219507,Santa Catarina,0,1
+Sul,4219606,Santa Catarina,0,1
+Sul,4219705,Santa Catarina,0,1
+Sul,4300034,Rio Grande do Sul,1,1
+Sul,4300208,Rio Grande do Sul,0,1
+Sul,4300307,Rio Grande do Sul,0,1
+Sul,4300406,Rio Grande do Sul,0,1
+Sul,4300455,Rio Grande do Sul,0,1
+Sul,4300471,Rio Grande do Sul,0,1
+Sul,4300505,Rio Grande do Sul,0,1
+Sul,4300646,Rio Grande do Sul,0,1
+Sul,4300901,Rio Grande do Sul,0,1
+Sul,4301073,Rio Grande do Sul,0,1
+Sul,4301305,Rio Grande do Sul,0,1
+Sul,4301503,Rio Grande do Sul,0,1
+Sul,4301602,Rio Grande do Sul,0,1
+Sul,4301701,Rio Grande do Sul,0,1
+Sul,4301859,Rio Grande do Sul,0,1
+Sul,4301875,Rio Grande do Sul,1,1
+Sul,4301925,Rio Grande do Sul,0,1
+Sul,4301958,Rio Grande do Sul,0,1
+Sul,4302055,Rio Grande do Sul,0,1
+Sul,4302154,Rio Grande do Sul,0,1
+Sul,4302204,Rio Grande do Sul,0,1
+Sul,4302220,Rio Grande do Sul,0,1
+Sul,4302378,Rio Grande do Sul,0,1
+Sul,4302501,Rio Grande do Sul,0,1
+Sul,4302584,Rio Grande do Sul,0,1
+Sul,4302600,Rio Grande do Sul,0,1
+Sul,4302808,Rio Grande do Sul,0,1
+Sul,4302907,Rio Grande do Sul,0,1
+Sul,4303301,Rio Grande do Sul,0,1
+Sul,4303400,Rio Grande do Sul,0,1
+Sul,4303707,Rio Grande do Sul,0,1
+Sul,4303806,Rio Grande do Sul,0,1
+Sul,4304002,Rio Grande do Sul,0,1
+Sul,4304309,Rio Grande do Sul,0,1
+Sul,4304358,Rio Grande do Sul,0,1
+Sul,4304507,Rio Grande do Sul,0,1
+Sul,4304655,Rio Grande do Sul,0,1
+Sul,4304663,Rio Grande do Sul,0,1
+Sul,4305009,Rio Grande do Sul,0,1
+Sul,4305124,Rio Grande do Sul,0,1
+Sul,4305157,Rio Grande do Sul,0,1
+Sul,4305207,Rio Grande do Sul,0,1
+Sul,4305306,Rio Grande do Sul,0,1
+Sul,4305405,Rio Grande do Sul,0,1
+Sul,4305439,Rio Grande do Sul,1,1
+Sul,4305702,Rio Grande do Sul,0,1
+Sul,4305801,Rio Grande do Sul,0,1
+Sul,4305850,Rio Grande do Sul,0,1
+Sul,4305871,Rio Grande do Sul,0,1
+Sul,4305900,Rio Grande do Sul,0,1
+Sul,4306007,Rio Grande do Sul,0,1
+Sul,4306072,Rio Grande do Sul,0,1
+Sul,4306106,Rio Grande do Sul,0,1
+Sul,4306130,Rio Grande do Sul,0,1
+Sul,4306320,Rio Grande do Sul,0,1
+Sul,4306353,Rio Grande do Sul,0,1
+Sul,4306429,Rio Grande do Sul,0,1
+Sul,4306601,Rio Grande do Sul,0,1
+Sul,4306734,Rio Grande do Sul,0,1
+Sul,4306924,Rio Grande do Sul,0,1
+Sul,4306932,Rio Grande do Sul,0,1
+Sul,4306957,Rio Grande do Sul,0,1
+Sul,4307104,Rio Grande do Sul,0,1
+Sul,4307203,Rio Grande do Sul,0,1
+Sul,4307302,Rio Grande do Sul,0,1
+Sul,4307450,Rio Grande do Sul,0,1
+Sul,4307831,Rio Grande do Sul,0,1
+Sul,4308052,Rio Grande do Sul,0,1
+Sul,4308508,Rio Grande do Sul,0,1
+Sul,4308656,Rio Grande do Sul,0,1
+Sul,4309001,Rio Grande do Sul,0,1
+Sul,4309126,Rio Grande do Sul,0,1
+Sul,4309506,Rio Grande do Sul,0,1
+Sul,4309605,Rio Grande do Sul,0,1
+Sul,4309654,Rio Grande do Sul,0,1
+Sul,4309704,Rio Grande do Sul,0,1
+Sul,4310207,Rio Grande do Sul,0,1
+Sul,4310405,Rio Grande do Sul,0,1
+Sul,4310413,Rio Grande do Sul,0,1
+Sul,4310504,Rio Grande do Sul,0,1
+Sul,4310553,Rio Grande do Sul,0,1
+Sul,4310603,Rio Grande do Sul,1,1
+Sul,4310702,Rio Grande do Sul,0,1
+Sul,4310850,Rio Grande do Sul,0,1
+Sul,4310900,Rio Grande do Sul,0,1
+Sul,4311007,Rio Grande do Sul,1,1
+Sul,4311155,Rio Grande do Sul,0,1
+Sul,4311429,Rio Grande do Sul,0,1
+Sul,4311502,Rio Grande do Sul,0,1
+Sul,4311601,Rio Grande do Sul,0,1
+Sul,4311718,Rio Grande do Sul,0,1
+Sul,4311759,Rio Grande do Sul,0,1
+Sul,4312179,Rio Grande do Sul,0,1
+Sul,4312302,Rio Grande do Sul,0,1
+Sul,4312450,Rio Grande do Sul,0,1
+Sul,4312708,Rio Grande do Sul,0,1
+Sul,4312955,Rio Grande do Sul,0,1
+Sul,4313011,Rio Grande do Sul,0,1
+Sul,4313037,Rio Grande do Sul,0,1
+Sul,4313334,Rio Grande do Sul,0,1
+Sul,4313425,Rio Grande do Sul,0,1
+Sul,4313441,Rio Grande do Sul,0,1
+Sul,4313466,Rio Grande do Sul,0,1
+Sul,4313490,Rio Grande do Sul,0,1
+Sul,4313706,Rio Grande do Sul,0,1
+Sul,4313805,Rio Grande do Sul,0,1
+Sul,4313904,Rio Grande do Sul,0,1
+Sul,4314134,Rio Grande do Sul,0,1
+Sul,4314175,Rio Grande do Sul,0,1
+Sul,4314209,Rio Grande do Sul,0,1
+Sul,4314308,Rio Grande do Sul,0,1
+Sul,4314407,Rio Grande do Sul,0,1
+Sul,4314456,Rio Grande do Sul,0,1
+Sul,4314498,Rio Grande do Sul,0,1
+Sul,4314506,Rio Grande do Sul,0,1
+Sul,4314555,Rio Grande do Sul,0,1
+Sul,4314605,Rio Grande do Sul,0,1
+Sul,4314704,Rio Grande do Sul,0,1
+Sul,4314787,Rio Grande do Sul,0,1
+Sul,4315008,Rio Grande do Sul,0,1
+Sul,4315057,Rio Grande do Sul,1,1
+Sul,4315073,Rio Grande do Sul,0,1
+Sul,4315107,Rio Grande do Sul,1,1
+Sul,4315305,Rio Grande do Sul,1,1
+Sul,4315404,Rio Grande do Sul,0,1
+Sul,4315552,Rio Grande do Sul,0,1
+Sul,4315602,Rio Grande do Sul,0,1
+Sul,4315909,Rio Grande do Sul,0,1
+Sul,4315958,Rio Grande do Sul,0,1
+Sul,4316105,Rio Grande do Sul,0,1
+Sul,4316204,Rio Grande do Sul,0,1
+Sul,4316303,Rio Grande do Sul,0,1
+Sul,4316402,Rio Grande do Sul,0,1
+Sul,4316428,Rio Grande do Sul,0,1
+Sul,4316477,Rio Grande do Sul,0,1
+Sul,4316709,Rio Grande do Sul,0,1
+Sul,4316972,Rio Grande do Sul,0,1
+Sul,4317004,Rio Grande do Sul,0,1
+Sul,4317103,Rio Grande do Sul,1,1
+Sul,4317202,Rio Grande do Sul,0,1
+Sul,4317301,Rio Grande do Sul,0,1
+Sul,4317400,Rio Grande do Sul,0,1
+Sul,4317509,Rio Grande do Sul,0,1
+Sul,4317707,Rio Grande do Sul,0,1
+Sul,4317806,Rio Grande do Sul,0,1
+Sul,4317905,Rio Grande do Sul,0,1
+Sul,4318002,Rio Grande do Sul,1,1
+Sul,4318101,Rio Grande do Sul,0,1
+Sul,4318309,Rio Grande do Sul,0,1
+Sul,4318457,Rio Grande do Sul,0,1
+Sul,4318499,Rio Grande do Sul,0,1
+Sul,4318507,Rio Grande do Sul,0,1
+Sul,4318903,Rio Grande do Sul,0,1
+Sul,4319109,Rio Grande do Sul,0,1
+Sul,4319158,Rio Grande do Sul,0,1
+Sul,4319208,Rio Grande do Sul,0,1
+Sul,4319307,Rio Grande do Sul,0,1
+Sul,4319364,Rio Grande do Sul,0,1
+Sul,4319372,Rio Grande do Sul,0,1
+Sul,4319703,Rio Grande do Sul,0,1
+Sul,4319737,Rio Grande do Sul,0,1
+Sul,4320107,Rio Grande do Sul,0,1
+Sul,4320206,Rio Grande do Sul,0,1
+Sul,4320230,Rio Grande do Sul,0,1
+Sul,4320321,Rio Grande do Sul,0,1
+Sul,4320578,Rio Grande do Sul,0,1
+Sul,4321329,Rio Grande do Sul,0,1
+Sul,4321402,Rio Grande do Sul,0,1
+Sul,4321477,Rio Grande do Sul,0,1
+Sul,4321808,Rio Grande do Sul,0,1
+Sul,4321857,Rio Grande do Sul,0,1
+Sul,4321907,Rio Grande do Sul,0,1
+Sul,4321956,Rio Grande do Sul,0,1
+Sul,4322103,Rio Grande do Sul,0,1
+Sul,4322301,Rio Grande do Sul,0,1
+Sul,4322343,Rio Grande do Sul,0,1
+Sul,4322376,Rio Grande do Sul,0,1
+Sul,4322400,Rio Grande do Sul,1,1
+Sul,4323101,Rio Grande do Sul,0,1
+Sul,4323457,Rio Grande do Sul,0,1
+Sul,4323507,Rio Grande do Sul,0,1
+Sul,4323705,Rio Grande do Sul,0,1
+Sul,4323754,Rio Grande do Sul,0,1
+Centro-oeste,5000609,Mato Grosso do Sul,0,1
+Centro-oeste,5000906,Mato Grosso do Sul,0,1
+Centro-oeste,5001243,Mato Grosso do Sul,0,1
+Centro-oeste,5002100,Mato Grosso do Sul,1,1
+Centro-oeste,5002159,Mato Grosso do Sul,0,1
+Centro-oeste,5002209,Mato Grosso do Sul,0,1
+Centro-oeste,5002407,Mato Grosso do Sul,0,1
+Centro-oeste,5002803,Mato Grosso do Sul,0,1
+Centro-oeste,5003157,Mato Grosso do Sul,1,1
+Centro-oeste,5003207,Mato Grosso do Sul,1,1
+Centro-oeste,5003504,Mato Grosso do Sul,0,1
+Centro-oeste,5003702,Mato Grosso do Sul,0,1
+Centro-oeste,5003751,Mato Grosso do Sul,0,1
+Centro-oeste,5003801,Mato Grosso do Sul,0,1
+Centro-oeste,5004007,Mato Grosso do Sul,0,1
+Centro-oeste,5004106,Mato Grosso do Sul,0,1
+Centro-oeste,5004304,Mato Grosso do Sul,0,1
+Centro-oeste,5004502,Mato Grosso do Sul,0,1
+Centro-oeste,5004601,Mato Grosso do Sul,0,1
+Centro-oeste,5004809,Mato Grosso do Sul,0,1
+Centro-oeste,5005004,Mato Grosso do Sul,0,1
+Centro-oeste,5005103,Mato Grosso do Sul,0,1
+Centro-oeste,5005152,Mato Grosso do Sul,0,1
+Centro-oeste,5005202,Mato Grosso do Sul,0,1
+Centro-oeste,5005251,Mato Grosso do Sul,0,1
+Centro-oeste,5005400,Mato Grosso do Sul,0,1
+Centro-oeste,5005681,Mato Grosso do Sul,1,1
+Centro-oeste,5005707,Mato Grosso do Sul,0,1
+Centro-oeste,5005806,Mato Grosso do Sul,0,1
+Centro-oeste,5006358,Mato Grosso do Sul,1,1
+Centro-oeste,5006606,Mato Grosso do Sul,1,1
+Centro-oeste,5006903,Mato Grosso do Sul,1,1
+Centro-oeste,5007208,Mato Grosso do Sul,0,1
+Centro-oeste,5007703,Mato Grosso do Sul,0,1
+Centro-oeste,5007950,Mato Grosso do Sul,0,1
+Centro-oeste,5008404,Mato Grosso do Sul,0,1
+Centro-oeste,5101258,Mato Grosso,0,1
+Centro-oeste,5102504,Mato Grosso,1,1
+Centro-oeste,5102686,Mato Grosso,0,1
+Centro-oeste,5103304,Mato Grosso,0,1
+Centro-oeste,5103361,Mato Grosso,0,1
+Centro-oeste,5103437,Mato Grosso,0,1
+Centro-oeste,5103809,Mato Grosso,0,1
+Centro-oeste,5103957,Mato Grosso,0,1
+Centro-oeste,5104500,Mato Grosso,0,1
+Centro-oeste,5105002,Mato Grosso,0,1
+Centro-oeste,5105234,Mato Grosso,0,1
+Centro-oeste,5105507,Mato Grosso,0,1
+Centro-oeste,5105622,Mato Grosso,0,1
+Centro-oeste,5106182,Mato Grosso,0,1
+Centro-oeste,5106752,Mato Grosso,0,1
+Centro-oeste,5106828,Mato Grosso,0,1
+Centro-oeste,5107107,Mato Grosso,0,1
+Centro-oeste,5107156,Mato Grosso,0,1
+Centro-oeste,5107206,Mato Grosso,0,1
+Centro-oeste,5107750,Mato Grosso,0,1
+Centro-oeste,5108352,Mato Grosso,0,1
