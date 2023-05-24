@@ -22,4 +22,4 @@ front.mun %>%
   )
 
 # Salvando
-front.mun %>% write_csv("fronteira.csv")
+# front.mun %>% write_csv("fronteira.csv")
