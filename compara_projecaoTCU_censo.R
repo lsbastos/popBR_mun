@@ -18,6 +18,8 @@ pop2022.censo <- pop2022.censo %>%
   ) %>% select(`COD. UF`, UF, CODMUN7, `NOME DO MUNICÍPIO`, POP22.censo)
 # ) %
 
+pop <- read_csv("~/Git/popBR_mun/poptcu2010-2022.csv")
+
 pop <- pop %>% 
   left_join(pop2022.censo %>% 
               mutate(
@@ -25,8 +27,11 @@ pop <- pop %>%
               ) %>% 
               select(CODMUN7,POP22.censo), by = "CODMUN7")
 
-
-pop <- read_csv("~/Git/popBR_mun/poptcu2010-2022.csv")
+pop %>% 
+  mutate(
+    POP22 = POP22.censo
+  ) %>% select(-POP22.censo) %>% 
+  write_csv("poptcu2010-2022new.csv")
 
 pop %>% ggplot(aes(x = POP10)) + 
   geom_point(aes(y = POP22, color = "Projecao 2022 (TCU)")) + 
@@ -55,18 +60,6 @@ pop %>%
     TCU12 = sqrt(mean(erroCenso12^2)),
   )
 
-
-
-library(geobr)
-
-BR.0 <- read_municipality(
-  code_muni = "all",
-  year = 2010,
-  simplified = TRUE,
-  showProgress = TRUE
-)
-
-
 pop <- pop %>% 
   mutate(
     ErroRelativo =(POP22 - POP22.censo)/POP22.censo,
@@ -77,14 +70,66 @@ pop <- pop %>%
                  "0 a 5", "5 a 10", "10 a 15", "15 a 20", "> 20")
     )
   )
-pop %>% group_by(ErroRelativo.cat) %>% tally()
-  
+
+pop %>% group_by(ErroRelativo.cat) %>% 
+  summarise(
+    y = n(), 
+    prop = y / 5570 * 100, 
+    POPproj = sum(POP22),
+    POPcenso = sum(POP22.censo))
+
 
 pop %>% #group_by(ErroRelativo.cat) %>% 
   ggplot() + 
   geom_bar(aes(x = ErroRelativo.cat), fill = "darkblue") +
   theme_bw()
 
+
+
+pop <- pop %>% 
+  mutate(
+    Popsize = cut(POP22.censo, 
+                  breaks = c(0,15000, 150000, 1500000, 250000000),
+                  labels = c("< 15k", "15k -150k", "150k - 1.5M", "> 1.5M"))
+  )
+
+pop %>% 
+  group_by(Popsize) %>% 
+  summarise(
+    EMP = mean(ErroRelativo),
+    EMPM = mean(abs(ErroRelativo)),
+  ) %>% View()
+
+
+pop %>% 
+  mutate(
+    Regiao = substr(as.character(CODMUN7),1,1),
+    Regiao = case_when(
+      Regiao ==  "1" ~ "Norte",
+      Regiao ==  "2" ~ "Nordeste",
+      Regiao ==  "3" ~ "Sudeste",
+      Regiao ==  "4" ~ "Centro Oeste",
+      Regiao ==  "5" ~ "Sul")
+  ) %>% 
+  ggplot() + 
+  geom_point(aes(x = Popsize, y = ErroRelativo), 
+             position = position_jitter(width = .3) ) +
+  geom_boxplot(aes(x = Popsize, y = ErroRelativo), alpha = 0.4) + 
+  theme_bw() + 
+  facet_wrap(~Regiao)
+
+
+
+
+
+library(geobr)
+
+BR.0 <- read_municipality(
+  code_muni = "all",
+  year = 2010,
+  simplified = TRUE,
+  showProgress = TRUE
+)
 
 
 BR <- BR.0 %>% 
