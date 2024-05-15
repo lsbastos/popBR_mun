@@ -27,11 +27,11 @@ pop <- pop %>%
               ) %>% 
               select(CODMUN7,POP22.censo), by = "CODMUN7")
 
-pop %>% 
-  mutate(
-    POP22 = POP22.censo
-  ) %>% select(-POP22.censo) %>% 
-  write_csv("poptcu2010-2022new.csv")
+# pop %>% 
+#   mutate(
+#     POP22 = POP22.censo
+#   ) %>% select(-POP22.censo) %>% 
+#   write_csv("poptcu2010-2022new.csv")
 
 pop %>% ggplot(aes(x = POP10)) + 
   geom_point(aes(y = POP22, color = "Projecao 2022 (TCU)")) + 
