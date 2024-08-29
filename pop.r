@@ -3,7 +3,7 @@ library(readxl)
 # library(geobr)
 
 # FONTES: 
-## Estimativas do TCU para 2020 e 2021
+## Estimativas do TCU para 2011 a 2021, e 2024
 ## https://www.ibge.gov.br/estatisticas/sociais/populacao/9103-estimativas-de-populacao.html?edicao=17283&t=downloads
 
 ## Estimativas do TCU para 2022
@@ -172,3 +172,27 @@ temp <- read_xlsx("brute/tabela1378.xlsx", range = "A7:E5576",
 pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
 # write_csv(pop.test, file = "poptcu2010-2022.csv")
+
+
+pop2024 <- read_xls(path = "brute/estimativa_dou_2024.xls", 
+                    sheet = "MUNICÍPIOS",
+                    range = "A2:E5572"
+)
+
+temp <- pop.fun(pop2024) %>% rename(POP24 = pop)
+pop <- pop %>% left_join(y = temp, by = "CODMUN7")
+
+
+# write_csv(pop, file = "poptcu2010-2022_2024.csv")
+
+pop %>% 
+  pivot_longer( 
+    cols = POP22:POP24,
+    names_to = "Ano",
+    values_to = "Pop"
+  ) %>% 
+  mutate(
+    Ano = as.numeric(substr(Ano, 4,5)) + 2000
+  ) %>% 
+  arrange(CODMUN7, Ano) %>% View()
+  
