@@ -1,5 +1,5 @@
 library(tidyverse)
-\library(geobr)
+library(geobr)
 
 # FONTES: 
 ## Estimativas do TCU para 2020 e 2021
@@ -9,7 +9,7 @@ library(tidyverse)
 ## https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html?edicao=35938&t=resultados
 
 
-pop <- read_csv("poptcu2011-2022.csv")
+pop <- read_csv("poptcu2010-2022_2024.csv")
 
 # pop.g <- pop %>% 
 #   gather(key = "Year", value = "Pop", -`COD. UF`, - UF, -CODMUN7, -`NOME DO MUNICÍPIO`) %>% 
@@ -35,14 +35,14 @@ aaa <- pop %>%
   )
 
 
-BR <- read_municipality(
+muni <- read_municipality(
   code_muni = "all",
-  year = 2010,
+  year = 2022,
   simplified = TRUE,
   showProgress = TRUE
 )
 
-BR <- BR %>% 
+BR <- muni %>% 
   left_join(aaa, by = c("code_muni"="CODMUN7")) 
 
 
@@ -63,7 +63,7 @@ ggplot() +
 # https://gist.github.com/lucaswarwar/fcfec073e6331d102f032b2612dc0190
 
 pop <- pop %>% dplyr::mutate(
-  crescimento = POP22/POP21 - 1,
+  crescimento = POP22/POP10 - 1,
   label = data.table::fcase(
     crescimento < -.30, 'Redução de 30% ou mais',
     crescimento >= -.30 & crescimento < -.15, 'Redução de 15% a 30%',
@@ -85,13 +85,12 @@ pop$label = factor(
     "Crescimento de 15% a 30%",
     "Crescimento de 30% ou mais"), ordered = T)
 
-muni = geobr::read_municipality()
 uf = geobr::read_state()
 
-pop$code_muni = as.integer(pop$CODMUN7)
+# pop$code_muni = as.integer(pop$CODMUN7)
 
 muni = muni |>
-  dplyr::left_join(pop) |>
+  dplyr::left_join(pop, by = c("code_muni"="CODMUN7")) |>
   sf::st_as_sf()
 
 muni = na.omit(muni)
@@ -107,7 +106,7 @@ ggplot() +
   #          color = '#c51b7d') +
   scale_fill_brewer(palette = 'PiYG') +
   labs(
-    title = 'Evolução das estimativas populacionais de 2021 e 2022',
+    title = 'Evolução dos cálculos populacionais dos censos de 2010 e 2022',
     # subtitle = 'Fonte: IBGE. Baseado nos resultados preliminares do Censo 2022 coletados até 25/12.',
     # caption = 'Elaborado por @LucasWarwar'
   ) +

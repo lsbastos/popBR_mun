@@ -12,6 +12,8 @@ library(readxl)
 # Populaçào 2010 (CENSO)
 # https://sidra.ibge.gov.br/tabela/1378
 
+ # CENSO 2022
+
 pop2022 <- read_xls(path = "brute/POP2022_Municipios.xls", 
                     sheet = "Municípios",
                     range = "A2:E5572"
@@ -20,6 +22,7 @@ pop2022 <- read_xls(path = "brute/POP2022_Municipios.xls",
 pop <- pop2022 %>% 
   mutate(
     CODMUN7 = paste0(`COD. UF`, `COD. MUNIC`),
+    # Encontra algum parentesis no campo populacao, se sim contar até ele
     End = unlist(gregexpr("\\(", `POPULAÇÃO`)),
     POP22 = ifelse(End == -1, 
                    as.numeric(`POPULAÇÃO`),
@@ -37,6 +40,19 @@ pop <- pop2022 %>%
   ) %>% select(`COD. UF`, UF, CODMUN7, `NOME DO MUNICÍPIO`, POP22)
   # ) %>% select(CODMUN7, POP22)
 
+# CENSO 2010
+pop2010 <- read_xlsx("brute/tabela1378.xlsx", range = "A7:E5576", 
+                     col_names = c("CODMUN7", "Mun", "a", "b", "POP10")) %>% 
+  transmute(
+    CODMUN7 = (CODMUN7),
+    POP10 = as.numeric(POP10)
+  )
+
+pop <- pop %>% left_join(y = pop2010, by = "CODMUN7")
+
+
+
+################
 pop.fun <- function(x, comma = T){
   xx <- x  %>% 
     mutate(
@@ -57,9 +73,18 @@ pop.fun <- function(x, comma = T){
       #                   POP2020)
     ) 
   
-    xx %>% select(CODMUN7, pop)
+  xx %>% select(CODMUN7, pop)
 }
 
+
+
+pop2024 <- read_xls(path = "brute/estimativa_dou_2024.xls", 
+                    sheet = "MUNICÍPIOS",
+                    range = "A2:E5572"
+)
+
+temp <- pop.fun(pop2024) %>% rename(POP24 = pop)
+pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
 
 pop2021 <- read_xls(path = "brute/estimativa_dou_2021.xls", 
@@ -157,42 +182,18 @@ temp <- pop.fun(pop2011, comma = T) %>% rename(POP11 = pop)
 pop <- pop %>% left_join(y = temp, by = "CODMUN7")
 
 
-# write_csv(pop, file = "poptcu2011-2022.csv")
-
-# pop <- read_csv(file = "poptcu2011-2022.csv")
-
-temp <- read_xlsx("brute/tabela1378.xlsx", range = "A7:E5576", 
-                  col_names = c("CODMUN7", "Mun", "a", "b", "POP10")) %>% 
-  transmute(
-    CODMUN7 = as.numeric(CODMUN7),
-    POP10 = as.numeric(POP10)
-  )
-
-
-pop <- pop %>% left_join(y = temp, by = "CODMUN7")
-
-# write_csv(pop.test, file = "poptcu2010-2022.csv")
-
-
-pop2024 <- read_xls(path = "brute/estimativa_dou_2024.xls", 
-                    sheet = "MUNICÍPIOS",
-                    range = "A2:E5572"
-)
-
-temp <- pop.fun(pop2024) %>% rename(POP24 = pop)
-pop <- pop %>% left_join(y = temp, by = "CODMUN7")
-
-
 # write_csv(pop, file = "poptcu2010-2022_2024.csv")
 
-pop %>% 
+pop.long <- pop %>% 
   pivot_longer( 
-    cols = POP22:POP24,
+    cols = POP22:POP11,
     names_to = "Ano",
     values_to = "Pop"
   ) %>% 
   mutate(
     Ano = as.numeric(substr(Ano, 4,5)) + 2000
   ) %>% 
-  arrange(CODMUN7, Ano) %>% View()
+  arrange(desc(Ano), CODMUN7) 
+
+# pop.long %>% write_csv(file = "poptcu2010-2022_2024.long.csv")
   
